@@ -1,4 +1,4 @@
-nFROM savvai/base:latest
+FROM savvai/base:latest
 
 WORKDIR /root
 RUN git clone https://github.com/Totoro97/NeuS/
