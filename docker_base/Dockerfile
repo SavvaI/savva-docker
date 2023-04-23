@@ -10,7 +10,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     vim \
     tmux \
     unzip \
-    build-essential
+    build-essential \
+    lsb-release \
+    sudo
 
 # Git is used for versioning in some of our experiments
 RUN apt-get update && apt-get install -y --no-install-recommends git
