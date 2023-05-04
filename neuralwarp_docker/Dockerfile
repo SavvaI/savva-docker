@@ -36,5 +36,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends unzip
 RUN unzip 1.16.0.zip
 ENV CUB_HOME=${CURDIR}/cub-1.16.0/
 ENV FORCE_CUDA="True"
-ENV NVCC_FLAGS="-DCUDA_HAS_FP16=1"
-# RUN pip install -e .
+RUN rm -rf ./build && \
+    pip install .
